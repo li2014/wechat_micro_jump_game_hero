@@ -180,11 +180,11 @@ if not osp.exists(screenshot_directory):
 jump_times = itertools.count(0)
 while True:
     try:
-        debug = False
+        debug = True
 
         if debug:
             # your last failed image name
-            fn = '10.png'
+            fn = '38.png'
             fp = osp.join(screenshot_directory, fn)
         else:
             fn = str(next(jump_times)) + '.png'
